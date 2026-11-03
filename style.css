@@ -1,297 +1,206 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap');
 
-*{
-  margin:0;
-  padding: 0;
+* {
   box-sizing: border-box;
 }
 
-h1, h2 {
-    font-family: 'Poppins', sans-serif;
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  padding: clamp(16px, 4vw, 48px);
+  display: grid;
+  place-items: center;
+  background-color: rgb(243, 243, 168);
+  color: #24211f;
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2 {
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
-    font-family: 'Inter', sans-serif;
-}
-
-button, input {
-    font-family: 'DM Sans', sans-serif;
-}
-body{
-  background-color: rgb(243, 243, 168); 
-  display: grid;
-  place-items: center;
-  height: 100vh;
-}
-button, input {
-    font-family: 'DM Sans', sans-serif;
-}
-#card{
-height: auto;
-    width: 67%;
-    border: 3px solid black;
-    text-align: center;
-    background-color: #ffffff;
-}
-p.game {
-margin-right: 10px;
-text-align: left !important;
-font-weight:bold;
-font-size: 25px;
-text-align: left !important;
-}
-i {
-  color: #c46a38;
-  font-size: 25px;
-  margin-right: 15px;
-}
-.heading1{
-  font-family: 'Poppins', sans-serif;
-  /* font-family: 'Poppins', sans-serif; */
-  margin-top: 60px;
-  font-size: 50px;
-}
-b#num{
-  color:#c46a38;
-}
-.para{
-  /* font-family: 'Inter', sans-serif; */
   font-family: 'Inter', sans-serif;
-    font-size: 25px;
-    margin-top: 10px;
-    font-weight: 400;
-    margin-top: 30px;
 }
-.submit{
-display: flex;
-    /* flex-direction: column; */
-    height: 50px;
-    width: 60%;
-    /* margin-left: 280px; */
-    margin-top: 20px;
-    font-size: 25px;
-    color: white;
-    background-color: #de5f19;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    /* margin: to; */
-    text-align: center;
-    gap: 10px;
+
+button,
+input {
+  font-family: 'DM Sans', sans-serif;
 }
-input{
-    height: 50px;
-    width: 60%;
-    margin-top: 25px;
-    /* margin: auto; */
-    border-radius: 25px;
-    border: 1px solid #ded2c6;
-    font-size: 28px;
-    text-align: center;
-    font-weight: 700;
+
+#card {
+  width: min(100%, 900px);
+  padding: clamp(24px, 5vw, 56px);
+  border: 3px solid #24211f;
+  /* border-radius: 10px; */
+  background-color: #fff;
+  text-align: center;
 }
-#output{
-display: flex;
-    /* align-content: flex-start; */
-    justify-content: center;
-    margin-top: 50px;
+
+p.game {
+  margin: 0;
+  font-size: clamp(18px, 2.5vw, 25px);
+  font-weight: 700;
+  text-align: left;
 }
-.range{
-margin-top: 30px;
-    /* margin-right: 70%; */
-    font-size: 25px;
-    font-weight: 500;
-    width: 100%;
-    height: 96px;
-    /* border: 1px solid black; */
-    margin-left: 120px;
-    background-color: #e9e9a3;
-    border: 1px solid #352a24;
-    color: #de5f19;
-    font-family: 'Inter', sans-serif;
-    /* box-shadow: 3px 3px 7px black; */
+
+.game i {
+  margin-right: 10px;
+  color: #c46a38;
 }
-.result{
-      margin-top: 30px;
-    /* margin-right: 70%; */
-    font-size: 25px;
-    font-weight: 500;
-    width: 165%;
-    height: 96px;
-    /* border: 1px solid black; */
-    /* margin-left: 23px; */
-    background-color: #e9e9a3;
-    border: 1px solid #352a24;
-    color: #de5f19;
-    font-family: 'Inter', sans-serif;
-    /* box-shadow: 3px 3px 7px black; */
+
+.heading1 {
+  margin: clamp(24px, 5vw, 48px) 0 0;
+  font-size: clamp(32px, 6vw, 50px);
+  line-height: 1.15;
 }
-.attempt{
-      margin-top: 30px;
-    /* margin-right: 70%; */
-    font-size: 25px;
-    font-weight: 500;
-    width: 123%;
-    height: 96px;
-    /* border: 1px solid black; */
-    /* margin-left: 23px; */
-    background-color: #e9e9a3;
-    border: 1px solid #352a24;
-    color: #de5f19;
-    font-family: 'Inter', sans-serif;
-    /* box-shadow: 3px 3px 7px black; */
+
+b#num {
+  color: #c46a38;
 }
-#allput{
+
+.para {
+  margin: 20px 0 0;
+  font-size: clamp(16px, 2.5vw, 20px);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+#btn {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row !important;
-  justify-content: center;
-  /* gap: 90px;   */
-  width: 100%;
-  column-gap: 60px;
-  margin-top: 30px;
-  /* flex-direction: column; */
+  flex-direction: column;
   align-items: center;
+  gap: 12px;
+  width: min(100%, 480px);
+  margin: 28px auto 0;
 }
 
-.range, .result, .attempt{
-    width: 290px;
-    margin-left: 0;
-    height: 55px;
-    padding-top: 10px;
-    border-radius: 10px;
-
-}
-.result{
-  /* width: 100%; */
-  width: 290px;
-    /* margin-left: 13px; */
-}
-#btn{
-      display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+.inputBox,
+.submit {
+  width: 100%;
+  min-height: 52px;
+  border-radius: 28px;
+  font-size: clamp(16px, 2.5vw, 20px);
 }
 
-.try{
-font-size: 30px;
-margin-top: 50px;
-font-weight: 200;
+.inputBox {
+  padding: 10px 18px;
+  border: 1px solid #ded2c6;
+  text-align: center;
+  font-weight: 600;
 }
-b.fa-solid.fa-lightbulb{
-  color:#de5f19;
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border: 0;
+  background-color: #de5f19;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 150ms ease, transform 150ms ease;
 }
-@media(max-width:792px){
-  #card{
-    /* width: 90%; */
-    height: 100%;
-  }
+
+.submit:hover {
+  background-color: #c94f10;
 }
-@media(max-width:768px){
-  #card{
-    height: 100%;
+
+.submit:active {
+  transform: scale(0.98);
+}
+
+.inputBox:focus-visible,
+.submit:focus-visible {
+  outline: 3px solid #352a24;
+  outline-offset: 3px;
+}
+
+#allput {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.range,
+.result,
+.attempt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  min-height: 64px;
+  margin: 0;
+  padding: 12px;
+  border: 1px solid #352a24;
+  border-radius: 10px;
+  background-color: #e9e9a3;
+  color: #de5f19;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 600;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.try {
+  margin: 30px 0 0;
+  font-size: clamp(16px, 2.5vw, 21px);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+b.fa-solid.fa-lightbulb {
+  color: #de5f19;
+}
+
+@media (max-width: 600px) {
+  #card {
+    padding: 24px 18px;
   }
-  .try{
-    margin-top: 0px;
-  } 
-  .para{
-    margin-top: 10px;
+
+  .para br {
+    display: none;
   }
-  #btn{
-    margin-top: 10px;
+
+  #allput {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 22px;
   }
-  #allput{
-    margin-top: 10px;
-    /* margin-right: 10px; */
+
+  .range,
+  .result,
+  .attempt {
+    min-height: 54px;
   }
-  .range{
-    width: 250px;
-  }
-  .result{
-    width: 250px;
-    margin-left: 0px;
-  }
-  .attempt{
-    width: 250px;
-  }
-  .try{
-    margin-top: 20px;
+
+  .try {
+    margin-top: 22px;
   }
 }
 
-@media(max-width:756px){
-  #card{
-    height: 100%;
+@media (max-width: 360px) {
+  body {
+    padding: 12px;
   }
-}
-@media(max-width:728px){
-  input{
-    font-size: 20px;
+
+  #card {
+    padding: 20px 14px;
+    border-width: 2px;
   }
-  .submit{
-    font-size: 20px;
+
+  .heading1 {
+    font-size: 30px;
   }
-}
-@media(max-width:577px){
-  p.game{
-  font-size: 15px;
-}
-:before{
-  font-size: 20px;
-}
-  .heading1{
-  font-size: 30px;
-}
-.para{
-  font-size: 18px;
-}
-.try{
-  font-size: 18px;
-}
-.range{
-  margin-top: 10px;
-  height:70px;
-  width:200px;
-  font-size: 18px;
-}
-.result{
-  margin-top: 10px;
-  height:70px;
-  width:200px;
-  font-size: 13px;
-}
-.attempt{
-  margin-top: 10px;
-  height:70px;
-  width:200px;
-  font-size: 18px;
-}
-:before{
-  font-size: 15px;
-}
-}
-@media(max-width:372px){
-  .inputBox{
-    font-size: 15px;
-  }
-  .submit{
-    font-size: 15px;
-  }
-  .range{
-    width:180px;
-    font-size: 13px;
-    height: 60px;
-  }
-  .result{
-    width:180px;
-    font-size: 13px;
-    height: 60px;
-  }
-  .attempt{
-    width:180px;
-    font-size: 13px;
-    height: 60px;
+
+  .inputBox,
+  .submit {
+    min-height: 48px;
   }
 }
