@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="card">
+        <div id="heading">
+            <p class="game"><i class="fa-solid fa-dice"></i>Number     Quest</p>
+            <h1 class="heading1">Guess the <b id="num">Number!</b></h1>
+            <p class="para">Test your guessing skills, follow the clues, and find the secret number.<br>Every guess brings
+                you closer to victory!</p>
+        </div>
+        <div id="btn" >
+            <!-- <b class="fa-solid fa-keyboard"></b> -->
+            <input class="inputBox"type="number" placeholder="Enter your guess..." >
+            <button onclick="check()" class="submit"><b class="fa-solid fa-paper-plane"></b>Submit Guess</button>
+        </div>
+        <div id="allput">
+        <div id="outputs0">
+            <div class="range">
+                <b class="fa-solid fa-bullseye"></b>&nbsp
+                 RANGE</div>
+            </div>
+            
+            <div id="outputs1">
+            <div class="result">
+                <b class="fa-solid fa-lightbulb"></b>
+                &nbsp RESULT 
+                </div>
+                </div>
+
+            <div id="outputs2">
+            <div class="attempt">
+                <b class="fa-solid fa-trophy"></b>
+                &nbsp ATTEMPTS 
+                </div>
+                </div>
+                </div>
+            <p class="try"><b class="fa-solid fa-lightbulb"></b>Try to find the secret number!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
